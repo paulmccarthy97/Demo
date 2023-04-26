@@ -1,0 +1,249 @@
+
+h1 {
+    color: purple;
+    text-shadow: 4px 4px 2px red;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    background-color: white;
+    margin: 30px;
+}
+
+.input-field {
+    margin: 20px;
+}
+
+.Title1 {
+    color: darkolivegreen;
+    text-align: center;
+}
+
+#Italic {color: blue;}
+
+.Nav {
+    background-color: rgb(255, 255, 255);
+
+    width: 1400px;
+
+    height: 100px;
+
+    text-align: center;
+}
+
+.nav-wrapper {
+    background-color: blue;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.Container {
+    border: 10px dashed rgb(119, 0, 255);
+ 
+    margin: 50px 50px 50px 50px;
+
+    padding: 30px 30px 30px 30px;
+}
+
+.Box {
+     background: red;
+
+     height: 200px;
+
+     width: 200px;
+
+     margin: 10px ;
+}
+
+@keyframes fadeMe {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+  }
+}
+
+@keyframes rotation {
+ 0% {
+    transform: rotate(0deg);
+ }
+
+ 100% {
+    transform: rotate(360deg);
+ }
+}
+
+@keyframes getBigger {
+    0% {transform: scale(1);}
+    50% {transform: scale(2);}
+    1000% {transform: scale(5);}
+}
+
+@keyframes changeColour {
+    0% {background-color: beige;}
+    20% {background-color: rgb(71, 26, 131);}
+    40% {background-color: rgb(226, 226, 27);}
+    60% {background-color: rgb(100, 192, 47);}
+    80% {background-color: rgb(37, 202, 224);}
+}
+
+@keyframes moveBox{
+    0% {right: 0px; top: 0px;}
+    25% {right: 100px; top: 0px;}
+    50% {right: 100px; top: 100px;}
+    75% {right: 0px; top: 100px;}
+    100% {right: 0px; top: 0px;}
+}
+
+#Box1 {
+    animation-name: fadeMe;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+#Box2{
+    animation-name: rotation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    border-radius: 10%;
+    background-color:darkblue;
+    background-image: radial-gradient(circle, purple, orange, 
+    yellow, pink, purple );
+}
+
+#Box3 {
+    animation: getBigger infinite 8s ease-in;
+    border-radius: 50%;
+    background: indigo;
+}
+
+#Box4 {
+    animation: changeColour 3s infinite forwards;
+}
+
+#Box5 { 
+    animation: moveBox 3s infinite;
+    background-color: darksalmon;
+    position: relative
+}
+
+#Box6 {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    background-color: silver;
+    }
+
+html {
+  background-image: linear-gradient(to left, blue, crimson, purple, green, gold);
+}
+
+.MUFC1 {
+    border-radius: 80%;
+}
+
+img {
+    box-shadow: 5px 10px 10px 10px rgb(46, 44, 44);
+}
+
+.Flex {
+    margin: 30px;
+    border: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+form input, textarea, button {
+    display: block;
+    margin: 30px
+}
+
+body {
+    margin: 40px;
+  }
+  
+  .wrapper {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(5, [col] 19%  ) ;
+      grid-template-rows: repeat(3, [row] auto );
+      background-image: linear-gradient(to left, blue, crimson, purple, green, gold);
+      color: #444;
+    }
+  
+    .box {
+        background-image: linear-gradient(to left, blue, crimson, purple, green, gold);
+      color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      font-size: 150%;
+      z-index:10;
+  
+    }
+  
+    .a {
+      grid-column: col / span  2;
+      grid-row: row ;
+      background-color: blue;
+      display: flex;
+      justify-content: center;
+    }
+    .b {
+      grid-column: col 4 / span  2;
+      grid-row: row ;
+      background-color: blue;
+      display: flex;
+      justify-content: center;
+    }
+    .c {
+      grid-column: col / span 5;
+      grid-row: row 2 ;
+      background-image: linear-gradient(to bottom, pink, purple, orange, yellow, red);
+      display: flex;
+      justify-content: center;
+    }
+    .d {
+      grid-column: col / span  3;
+      grid-row: row 3 ;
+      background-color: greenyellow;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .e {
+      grid-column: col 3 / span 3;
+      grid-row: row 3;
+      background-color: greenyellow;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .f {
+      grid-column: col 2 / span 3;
+      grid-row: row 2  ;
+      background-image: linear-gradient(to bottom, red, yellow, orange, purple, pink);
+      z-index: 20;
+      display: flex;
+      justify-content: center;
+    }
